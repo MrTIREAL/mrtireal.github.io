@@ -1,29 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Portfolio</title>
-    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
-	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-		
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	
-	<!-- Bootstrap -->
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="TIREAL DESIGN">
+    <meta name="author" content="TIREAL">
+	
+	<title>Portfolio</title>
+	
+	<!-- Fonts -->
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+		
+	<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+	
+	<!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+	
+	<!-- Bootstrap -->	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/bootstrap.min.js"></script>
 	
-	<!-- CSS -->
+	<!-- Custom -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<script src="js/js.js"></script>	
+	<script src="js/js.js"></script>
+
 </head>
 
-<body id="TIREAL" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="page-top" class="index">
 
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container">
-		<div class="navbar-header">
+		<div class="navbar-header" class="page-scroll">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -33,12 +51,12 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#services">SERVICES</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#pricing">PRICING</a></li>
-			<li><a href="#contact">CONTACT</a></li>
+			<li><a class="page-scroll" href="#home">HOME</a></li>
+			<li><a class="page-scroll" href="#about">ABOUT</a></li>
+			<li><a class="page-scroll" href="#services">SERVICES</a></li>
+			<li><a class="page-scroll" href="#portfolio">PORTFOLIO</a></li>
+			<li><a class="page-scroll" href="#pricing">PRICING</a></li>
+			<li><a class="page-scroll" href="#contact">CONTACT</a></li>
 		  </ul>
 		</div>
 	  </div>
@@ -257,36 +275,9 @@
 			</div> 
 		</div>
 	</div>
-		
-	<!-- Container (Google Map Section) -->  
-	<div id="googleMap" style="height:400px;width:100%;">
-
-		<!-- Add Google Maps -->
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<script>
-		var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-		function initialize() {
-		var mapProp = {
-		center:myCenter,
-		zoom:12,
-		scrollwheel:false,
-		draggable:false,
-		mapTypeId:google.maps.MapTypeId.ROADMAP
-		};
-
-		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-		var marker = new google.maps.Marker({
-		position:myCenter,
-		});
-
-		marker.setMap(map);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-	</div>
+	
+	<!-- Map Section -->
+    <div id="map"></div>
 	
 	<!-- Container (Contact Section) -->  
 	<div id="contact" class="container-fluid">
