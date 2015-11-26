@@ -324,4 +324,105 @@ hr {
     margin: 15px 0;
     background-color: #38A5DB;
     color: #fff;
+<<<<<<< HEAD
+=======
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .col-sm-4 {
+        text-align:center;
+        margin: 25px 0;
+    }
+}
+
+#home{
+	color:#fff;
+	height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:url(../img/header-bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    position: relative;
+}
+
+#about{
+	background-color:#2f2f2f;
+	color:#fff;
+}
+
+#services{
+	background-color:#fff;
+	color:#2f2f2f;
+}
+
+#portfolio{
+	background-color:#2f2f2f;
+	color:#fff;
+}
+
+#pricing{
+	background-color:#fff;
+	color:#2f2f2f;
+}
+
+#myCarousel{
+	background-color:#2f2f2f;
+	color:#fff;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+#contact {
+    background-color:#2f2f2f;
+    color:#fff;
+>>>>>>> origin/master
 }
