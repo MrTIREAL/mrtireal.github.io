@@ -1,32 +1,15 @@
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links in navbar + footer link
-	  $(".navbar a, footer a[href='#TIREAL']").on('click', function(event) {
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
-	  // Prevent default anchor click behavior
-	  event.preventDefault();
-
-	  // Store hash
-	  var hash = this.hash;
-
-	  // Using jQuery's animate() method to add smooth page scroll
-	  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-	  $('html, body').animate({
-		scrollTop: $(hash).offset().top
-	  }, 900, function(){
-
-		// Add hash (#) to URL when done scrolling (default click behavior)
-		window.location.hash = hash;
-		});
-	  });
-	  
-	  $(window).scroll(function() {
-	  $(".slideanim").each(function(){
-		var pos = $(this).offset().top;
-
-		var winTop = $(window).scrollTop();
-		if (pos < winTop + 600) {
-		  $(this).addClass("slide");
-		}
-	  });
-	});
-	})
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
