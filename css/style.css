@@ -12,11 +12,18 @@ p {
     line-height: 1.75;
 }
 
+h1 {
+	font-size: 60px;
+}
+
 h2 {
-    font-size: 24px;
+    font-size: 40px;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    word-spacing: 0.15em;
 }
 
 h4 {
@@ -29,6 +36,7 @@ h4 {
 	word-spacing: 4px;
     letter-spacing: 0.1em;
     text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+	font-family: elektra;
 }
 
 .black{
@@ -49,6 +57,26 @@ h4 {
     font-size:50px;
 }
 
+.lowerhead{
+	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.section-title{
+	margin-top: -20px;
+    margin-bottom: 50px;
+    text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
 .icon{
 	border: 2px solid black;
 	border-radius: 50%;
@@ -57,6 +85,30 @@ h4 {
 	margin: auto auto 1em auto;
 	width:150px;
 	height: 150px;
+}
+
+.service-icon{
+	color: #fff;
+	line-height: 150px;
+	border-radius: 50%;
+    font-size: 62px;
+	width: 150px;
+    height: 150px;
+    margin: 20px auto 20px;
+	background-color: #DAA520;
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+.polaroid {
+    border: 12px solid #fff;
+    max-width: 85%;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .navbar-default {

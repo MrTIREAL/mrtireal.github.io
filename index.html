@@ -17,7 +17,8 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	
 	<!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
@@ -60,10 +61,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Rólam</a>
+                        <a class="page-scroll" href="#about">Szolgáltatás</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Szolgáltatás</a>
+                        <a class="page-scroll" href="#services">Rólam</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolió</a>
@@ -84,71 +85,62 @@
 			<div class="header-content-inner">
 				<h1 class="hello">TIREAL WEBDESIGN</h1>
 				<hr>
-				<p>Letisztult, modern, reszponzív weboldalak, webes grafikák.</p>
-				<a href="#about" class="page-scroll">
+				<p class="lowerhead">Letisztult, modern, reszponzív weboldalak, webes grafikák.</p>
+			</div>
+			<a href="#about" class="page-scroll">
 					<i class="fa fa-angle-down fa-4x golden"></i>
-				</a>
-			</div>
-		</div>
-	</section>
-	
-    <!-- Container (About Section) -->        
-	<section id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Rólam</h2>
-					<h3 class="section-subheading text-muted">Én egy győri grafikus és  webfejlesztő vagyok.Köszöntöm honlapomon, amennyiben felakarja venni velem a kapcsolatot, írj egy üzenetet.</h3>
-				</div>
-			</div>
-			<div class="row">
-                <div class="col-lg-12">			
-				<img src="img/BLACK.jpg" class="img-circle"  height="100%" width="100%" alt="Black"></img>
-				</div>
-			</div>
+			</a>
 		</div>
 	</section>
 	
 	<!-- Container (Services Section) -->
 	<section id="services">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2>Szolgáltatás</h2>
-				</div>
-			</div>
+			<h2 class="section-title">Szolgáltatás</h2>
 			<div class="row text-center">
 				<div class="col-md-4">
-					<span class="fa-stack fa-4x">
-						<i class="fa fa-circle fa-stack-2x golden"></i>
-						<i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+					<span class="fa-stack fa-4x service-icon">
+						<i class="fa fa-lightbulb-o fa-stack-1x"></i>
 					</span>
-					<h4 class="service-heading">Branding</h4>
+					<h3 class="service-heading">Branding</h4>
 					<p class="text-muted">Komplett arculattervezés nyomtatott, illetve webes grafikákkal. Logokészítés</p>
 				</div>
 				<div class="col-md-4">
-					<span class="fa-stack fa-4x">
-						<i class="fa fa-circle fa-stack-2x golden"></i>
-						<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+					<span class="fa-stack fa-4x service-icon">
+						<i class="fa fa-laptop fa-stack-1x"></i>
 					</span>
-					<h4 class="service-heading">Web</h4>
+					<h3 class="service-heading">Web</h4>
 					<p class="text-muted">Komplett arculattervezés nyomtatott, illetve webes grafikákkal. Logokészítés</p>
 				</div>
 				<div class="col-md-4">
-					<span class="fa-stack fa-4x">
-						<i class="fa fa-circle fa-stack-2x golden"></i>
-						<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+					<span class="fa-stack fa-4x golden service-icon">
+						<i class="fa fa-pencil fa-stack-1x"></i>
 					</span>
-					<h4 class="service-heading">Design</h4>
+					<h3 class="service-heading">Design</h4>
 					<p class="text-muted">Komplett arculattervezés nyomtatott, illetve webes grafikákkal. Logokészítés</p>
 				</div>
 		   </div>
 	   </div>
 	</section>
 	
+	    <!-- Container (About Section) -->
+	<!-- <img src="img/BLACK.jpg" class="polaroid" alt="Black"></img> -->
+	<section id="about">
+		<div class="container">
+		<h2 class="section-title">Rólam</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="img/BLACK.jpg" class="polaroid" alt="Black"></img>
+				</div>
+				<div class="col-sm-6">
+					<p class="section-subheading text-muted">Én egy győri grafikus és  webfejlesztő vagyok.Köszöntöm honlapomon, amennyiben felakarja venni velem a kapcsolatot, írjon egy üzenetet.</p>
+				</div>
+		</div>
+	</section>
+	
 	<!-- Container (Portfolio Section) -->  
-	<section id="portfolio" class="container-fluid text-center black">
-	  <h2>PORTFOLIO</h2>
+	<section id="portfolio">
+	  <h2 class="section-title">Portfólio</h2>
 	  <div class="row text-center">
 		<div class="col-sm-4">
 		  <div class="thumbnail">
@@ -175,31 +167,33 @@
 	</section>
 	
 	<!-- Container (Contact Section) -->  
-	<section id="contact" class="container-fluid">
-	  <h2 class="text-center">Kapcsolat</h2>
-	  <div class="row">
-		<div class="col-sm-5">
-		  <p>Kérjen ajánlatot.</p>
-		  <p><span class="glyphicon glyphicon-map-marker"></span> Győr</p>
-		  <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-		  <p><span class="glyphicon glyphicon-envelope"></span> mrtireal@gmail.com</p> 
-		</div>
-		<div class="col-sm-7">
+	<section id="contact">
+	  <h2 class="section-title">Kapcsolat</h2>
+	  <div class="container">
 		  <div class="row">
-			<div class="col-sm-6 form-group">
-			  <input class="form-control" id="name" name="name" placeholder="Név" type="text" required>
+			<div class="col-sm-5">
+			  <p>Kérjen ajánlatot.</p>
+			  <p><span class="glyphicon glyphicon-map-marker"></span> Győr</p>
+			  <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+			  <p><span class="glyphicon glyphicon-envelope"></span> mrtireal@gmail.com</p> 
 			</div>
-			<div class="col-sm-6 form-group">
-			  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+			<div class="col-sm-7">
+			  <div class="row">
+				<div class="col-sm-6 form-group">
+				  <input class="form-control" id="name" name="name" placeholder="Név" type="text" required>
+				</div>
+				<div class="col-sm-6 form-group">
+				  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+				</div>
+			  </div>
+			  <textarea class="form-control" id="comments" name="comments" placeholder="Üzenet" rows="5"></textarea><br>
+			  <div class="row">
+				<div class="col-sm-12 form-group">
+				  <button class="btn btn-default pull-right" type="submit">Küldés</button>
+				</div>
+			  </div> 
 			</div>
 		  </div>
-		  <textarea class="form-control" id="comments" name="comments" placeholder="Üzenet" rows="5"></textarea><br>
-		  <div class="row">
-			<div class="col-sm-12 form-group">
-			  <button class="btn btn-default pull-right" type="submit">Küldés</button>
-			</div>
-		  </div> 
-		</div>
 	  </div>
 	</section>
 	
