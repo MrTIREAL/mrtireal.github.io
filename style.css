@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: elektra;
+    src: url(elektra.ttf);
+}
+
+p {
+	font-size: 14px;
+    line-height: 1.75;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: elektra;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+hr{
+	margin: 30px auto;
+	max-width: 80px;
+    border-color: #DAA520;
+    border-width: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.golden{
+	color: #DAA520;
+}
+
+.fb-like{
+	padding-top:20px;
+}
+
+.lowerhead{
+	margin-bottom: 30px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+	font-size: 1.8em;
+    font-style: italic;
+    padding: 0 2em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ 
+#TIREAL{
+	color: #fff;
+	text-align: center;
+	padding: 100px 15px;
+		height: 100vh;
+    width: 100%;
+	    background: url(img/bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media (max-width: 480px) {
+    #TIREAL {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+	
+	#TIREAL h1{
+		font-size: 40px;
+	}
+	#TIREAL p{
+		font-size: 18px;
+	}
+}
