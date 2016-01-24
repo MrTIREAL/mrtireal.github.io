@@ -81,4 +81,8 @@ hr{
 	#TIREAL p{
 		font-size: 18px;
 	}
+	
+	.lowerhead{
+		margin-bottom: 10px;
+	}
 }

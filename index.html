@@ -8,6 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="TIREAL DESIGN">
 	<meta name="author" content="TIREAL">
+	<meta property="og:image" content="http://tireal.me/img/tireal.jpg"/>
+	<meta property="fb:app_id" content="549391588548983" />
+	<meta property="og:url" content="http://tireal.me" />
+	<meta property="og:title" content="TIREAL DESIGN" />
+	<meta property="og:description" content="TIREAL DESIGN" />
   
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -17,19 +22,29 @@
   
   </head>
 <body>
-  
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=586671764767624";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	  
 
 	<div id="TIREAL">
 		<div class="container">
 			<h1 class="hello">TIREAL DESIGN</h1>
 			<hr>
 			<p class="lowerhead">Letisztult, modern, reszponzív weboldalak, webes grafikák.</p>
-			<a href="#tireal" class="page-scroll">
+			<a href="https://www.facebook.com/tirealdesign/" class="page-scroll">
 			 <img src="img/f.png" height="20" width="20"></img>
 			</a>
 			<br>
 			<!-- Your like button code -->
-			<div class="fb-like" data-href="#TIREAL"data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			<div class="fb-like" data-href="https://www.facebook.com/tirealdesign/"data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 	</div>
 	
